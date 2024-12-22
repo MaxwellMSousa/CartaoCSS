@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão de Visita</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #000, #555);
+      font-family: 'Arial', sans-serif;
+      color: white;
+    }
+
+    .cartao {
+      display: flex;
+      align-items: center;
+      width: 600px;
+      height: 250px;
+      background: #222;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .foto {
+      flex: 0 0 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #333;
+      border-radius: 15px 0 0 15px;
+      height: 100%;
+    }
+
+    .foto img {
+      border: 3px solid #444;
+      border-radius: 15px;
+      width: 90%;
+      height: 90%;
+      object-fit: cover;
+    }
+
+    .conteudo {
+      flex: 1;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .conteudo h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .conteudo p {
+      margin: 5px 0;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    .icones {
+      margin-top: 10px;
+    }
+
+    .icones a {
+      margin: 0 10px 0 0;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .icones img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #333;
+      padding: 5px;
+    }
+
+    .botoes {
+      margin-top: 10px;
+    }
+
+    .botoes a {
+      text-decoration: none;
+      color: #fff;
+      background: #444;
+      padding: 8px 15px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cartao">
+    <div class="foto">
+      <img src="imgs/img3.jpeg" alt="Foto do perfil">
+    </div>
+    <div class="conteudo">
+      <h1>Maxwell Maciel de Sousa</h1>
+      <p>Sou um desenvolvedor mobile com experiência em Kotlin, Swift e Flutter. Focado em entregar soluções eficientes.</p>
+      <div class="botoes">
+        <a href="tel:+558598839084" target="_blank">Ligar</a>
+        <a href="mailto:maxwellmacielshuz@gmail.com?subject=Assunto%20do%20Email&body=Mensagem%20pré-definida">Enviar E-mail</a>
+      </div>
+      <div class="icones">
+        <a href="https://github.com/MaxwellMSousa" target="_blank">
+          <img src="imgs/img2.png" alt="GitHub">
+        </a>
+        <a href="https://www.instagram.com/maxsksr" target="_blank">
+          <img src="imgs/img1.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
